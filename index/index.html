@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/header.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script type="text/javascript" src="../common/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../common/js/md5.js"></script>
+    <script type="text/javascript" src="../common/js/common.js"></script>
+    <script type="text/javascript" src="../common/js/languages.js"></script>
+    <script type="text/javascript" src="../common/js/header.js"></script>
+    <script type="text/javascript" src="../common/js/nav.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <nav class="head-nav">
+            <ul class="horizontal">
+                <a><li>首页</li></a>
+                <li class="language-selector dropdown-button">语言选择
+                    <ul class="dropdown-panel hide">
+                        <li data-lang="zh-cn" class="zh-cn">中文</li>
+                        <li data-lang="en-us" class="en-us">English</li>
+                    </ul>
+                </li>
+                <a><li>退出</li></a>
+            </ul>
+        </nav>
+        <div class="banner">
+            <a><img src="image/banner.png"></a>
+        </div>
+    </header>
+    <nav>
+        <ul class="horizontal main-nav">
+            <a><li class="user">个人信息</li></a>
+            <a><li class="selected index">认购</li></a>
+            <a><li class="extension">经纪人发展圈</li></a>
+            <a><li class="reward">奖励计划</li></a>
+            <a><li class="trade">交易查询</li></a>
+            <a><li class="profit">业绩报表</li></a>
+        </ul>
+        <div class="sub-nav">
+            <ul class="horizontal user hide">
+                <a><li class="selected edituser">个人信息编辑</li></a>
+                <a><li class="editpassword">密码维护</li></a>
+            </ul>
+            <ul class="horizontal index">
+                <a><li class="selected index">注册</li></a>
+                <a><li class="buypin">购买PIN码</li></a>
+                <a><li class="buyquery">认购查询</li></a>
+                <a><li class="rechargestock">充值证券</li></a>
+                <a><li class="pinrecharge">PIN码充值</li></a>
+                <a><li class="exchangerate">兑换率</li></a>
+            </ul>
+            <ul class="horizontal extension hide">
+                <a><li class="selected recommended">推荐圈</li></a>
+                <a><li class="development">开发圈</li></a>
+            </ul>
+            <ul class="horizontal reward hide">
+                <a><li class="selected rewardquery">奖励查询</li></a>
+            </ul>
+            <ul class="horizontal trade hide">
+                <a><li class="selected dollaraccount">美元账户</li></a>
+                <a><li class="xxcurrencyaccount">XX币账户</li></a>
+                <a><li class="financialaccount">理财账户</li></a>
+                <a><li class="xxstockcount">XX证券账户</li></a>
+                <a><li class="exchangeaccount">兑换账户</li></a>
+            </ul>
+            <ul class="horizontal profit hide">
+                <a><li class="selected profitinfo">业绩报表</li></a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="caption">
+            <h2>注册</h2>
+        </div>
+        <form action="" method="post" accept-charset="utf-8">
+            <ul>
+                <li class="required">
+                    <label for="account" class="required">用户名：</label>
+                    <input type="text" id="account" name="account" maxlength="32">
+                    <div class="tips"><span>用户名需至少6个英文字母或数字</span></div>
+                    <span class="error-tip"></span>
+                </li>
+                <li class="required">
+                    <label for="password" class="required">登录密码：</label>
+                    <input type="password" id="password" name="password" maxlength="32">
+                    <div class="tips"><span>密码需至少6位，推荐使用英文、数字和符号的组合</span></div>
+                    <span class="error-tip"></span>
+                    <div class="strength hide">
+                        <ul class="horizontal">
+                            <li class="weak"><div class="bar"></div><div>弱<div></li>
+                            <li class="normal"><div class="bar"></div><div>中<div></li>
+                            <li class="strong"><div class="bar"></div><div>强<div></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="required">
+                    <label for="password_repeat" class="required">确认密码：</label>
+                    <input type="password" id="password_repeat" name="password-repeat" maxlength="32">
+                    <span class="error-tip"></span>
+                </li>
+                <li class="required">
+                    <label for="payment_password" class="required">支付密码：</label>
+                    <input type="password" id="payment_password" name="payment-password" maxlength="32">
+                    <span class="error-tip"></span>
+                    <div class="strength hide">
+                        <ul class="horizontal">
+                            <li class="weak"><div class="bar"></div><div>弱<div></li>
+                            <li class="normal"><div class="bar"></div><div>中<div></li>
+                            <li class="strong"><div class="bar"></div><div>强<div></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="required">
+                    <label for="payment_password_repeat" class="required">确认支付密码：</label>
+                    <input type="password" id="payment_password_repeat" name="payment-password-repeat" maxlength="32">
+                    <span class="error-tip"></span>
+                </li>
+                <li class="required">
+                    <label for="name" class="required">姓名：</label>
+                    <input type="text" id="name" name="name" maxlength="32">
+                    <span class="error-tip"></span>
+                </li>
+                <li class="required">
+                    <label for="id_code" class="required">身份证号：</label>
+                    <input type="text" id="id_code" name="id-code" maxlength="18">
+                    <span class="error-tip"></span>
+                </li>
+                <li>
+                    <label for="birthday">出生日期：</label>
+                    <input type="text" id="birthday" name="birthday">
+                </li>
+                <li>
+                    <label for="country">国家：</label>
+                    <input type="text" id="country" name="country" maxlength="32">
+                </li>
+                <li>
+                    <label for="address">地址：</label>
+                    <input type="text" id="address" name="address">
+                </li>
+                <li>
+                    <label for="zip_code">邮政编码：</label>
+                    <input type="text" id="zip_code" name="zip-code" maxlength="6">
+                </li>
+                <li>
+                    <label for="cell_phone">手机号码：</label>
+                    <input type="tel" id="cell_phone" name="cell-phone" maxlength="11">
+                </li>
+                <li>
+                    <label for="email">电子邮件：</label>
+                    <input type="email" id="email" name="email" maxlength="32">
+                </li>
+                <li class="required">
+                    <label for="referee" class="required">推荐用户名：</label>
+                    <input type="text" id="referee" name="referee" maxlength="32">
+                    <span class="error-tip"></span>
+                </li>
+                <li class="required">
+                    <label for="developer" class="required">开发用户名：</label>
+                    <input type="text" id="developer" name="developer" maxlength="32">
+                    <span class="error-tip"></span>
+                    <div id="develop_point">
+                        <span>开发点：</span>
+                        <input type="radio" name="develop-point" value="left" id="left" checked="checked">
+                        <label for="left" class="radio">左</label>
+                        <input type="radio" name="develop-point" value="right" id="right">
+                        <label for="right" class="radio">右</label>
+                        <span class="error-tip"></span>
+                    </div>
+                </li>
+                <li class="consumer">
+                    <label for="consumer_level" class="required">配套级别：</label>
+                    <div id="consumer_level" class="consumer-level">
+                        <ul class="horizontal">
+                            <li class="level-1">
+                                <input type="radio" value="1" id="level-1" name="level"><label for="level-1" class="graphic">$900</label>
+                            </li>
+                            <li class="level-2">
+                                <input type="radio" value="2" id="level-2" name="level" checked="checked"><label for="level-2" class="graphic highlight">$3,000</label>
+                            </li>
+                            <li class="level-3">
+                                <input type="radio" value="3" id="level-3" name="level"><label for="level-3" class="graphic">$9,000</label>
+                            </li>
+                            <li class="level-4">
+                                <input type="radio" value="4" id="level-4" name="level"><label for="level-4" class="graphic">$30,000</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="submit">
+                <button type="button"><span>提   交</span></button>
+            </div>
+        </form>
+    </main>
+    <footer><p>Copyright © 2014 CHUENGNING</p></footer>
+</body>
+</html>

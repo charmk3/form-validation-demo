@@ -1,0 +1,467 @@
+header nav ul li{
+    padding: 0.35rem 0.35rem;
+}
+
+header nav {
+    text-align: right;
+}
+
+header .banner {
+    padding: 1.07rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.language-selector {
+    width: 7.35rem;
+    padding: 0.35rem 0;
+    position: relative;
+    text-align: center;
+}
+
+.language-selector .dropdown-panel {
+    width: 7.86rem;
+    position: absolute;
+    top: 1.86rem;
+    left: -0.07rem;
+}
+
+.language-selector .dropdown-panel li {
+    color: #cdb793;
+    border: 1px solid #eae3d3;
+    padding-left: 1.78rem;
+}
+
+/*Style*/
+
+.head-nav {
+    border-bottom: 1px solid #eae3d3;
+    background: none;
+}
+
+.head-nav ul li {
+    border-left: 1px solid #eae3d3;
+    font-size: 1rem;
+    color: #cdb793;
+}
+
+.head-nav > ul > a:first-child > li {
+    color: #644938;
+}
+
+.head-nav > ul > a:last-child > li {
+    border-right: 1px solid #eae3d3;
+}
+
+.language-selector .dropdown-panel li.zh-cn {
+    background-image: url(../image/chinese.png);
+    background-repeat: no-repeat;
+    background-position: 0.35rem 0.57rem;
+}
+
+.language-selector .dropdown-panel li.en-us {
+    background-image: url(../image/english.png);
+    background-repeat: no-repeat;
+    background-position: 0.28rem 0.57rem;
+}
+
+.dropdown-button:after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 0.35rem;
+    top: 0.78rem;
+    border-top: 0.43rem solid #cdb793;
+    border-left: 0.35rem solid transparent;
+    border-right: 0.35rem solid transparent;
+}
+
+.language-selector{
+    cursor: pointer;
+    color: #cdb793;
+}
+/*NAVIGATOR*/
+
+/*Layout*/
+
+.main-nav {
+    text-align: center;
+    position: relative;
+}
+
+.main-nav li {
+    padding: 1.07rem 1.07rem;
+    position: relative;
+}
+
+.sub-nav {
+    text-align: center;
+    position: relative;
+}
+
+.sub-nav li {
+    width: 5.71rem;
+    padding: 3.21rem 0 1.07rem 0;
+    position: relative;
+}
+
+.sub-nav a li {
+    display: inline-block;
+}
+
+/*Style*/
+
+.main-nav {
+    color: #644938;
+    font-weight: bold;
+    font-size: 1.28rem;
+    border-top: 1px solid #eae3d3;
+}
+
+nav li.selected {
+    color: #a66636;
+}
+
+.sub-nav {
+    font-size: 0.85rem;
+    background-color: rgba(252, 251, 249, 0.3);
+    border-top: 1px solid #eae3d3;
+}
+
+.sub-nav li {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+}
+
+.sub-nav .user .edituser {
+    background-position: -7.86rem -18.93rem;
+}
+
+.sub-nav .user .edituser.selected {
+    background-position: -7.86rem -25.21rem;
+}
+
+.sub-nav .user .editpassword {
+    background-position: -16.86rem -18.93rem;
+}
+
+.sub-nav .user .editpassword.selected {
+    background-position: -16.86rem -25.21rem;
+}
+
+.sub-nav .buy .register {
+    background-position: 1.78rem -8.93rem; 
+}
+
+.sub-nav .buy .register.selected {
+    background-position: 1.78rem 1.07rem; 
+}
+
+.sub-nav .buy .buypin {
+    background-position: -5.14rem -8.93rem; 
+}
+
+.sub-nav .buy .buypin.selected {
+    background-position: -5.14rem 1.07rem; 
+}
+
+.sub-nav .buy .buyquery {
+    background-position: -12.07rem -8.93rem; 
+}
+
+.sub-nav .buy .buyquery.selected {
+    background-position: -12.07rem 1.07rem; 
+}
+
+.sub-nav .buy .rechargestock {
+    background-position: -19rem -8.93rem; 
+}
+
+.sub-nav .buy .rechargestock.selected {
+    background-position: -19rem 1.07rem; 
+}
+
+.sub-nav .buy .pinrecharge {
+    background-position: -25.93rem -8.93rem; 
+}
+
+.sub-nav .buy .pinrecharge.selected {
+    background-position: -25.93rem 1.07rem; 
+}
+
+.sub-nav .buy .exchangerate {
+    background-position: -32.64rem -8.93rem; 
+}
+
+.sub-nav .buy .exchangerate.selected {
+    background-position: -32.64rem 1.07rem; 
+}
+
+.sub-nav .extension .recommended {
+    background-position: -8.21rem -75.43rem;
+}
+
+.sub-nav .extension .recommended.selected {
+    background-position: -8.21rem -68.14rem;
+}
+
+.sub-nav .extension .development {
+    background-position: -15.36rem -75.43rem;    
+}
+
+.sub-nav .extension .development.selected {
+    background-position: -15.36rem -68.14rem;    
+}
+
+.sub-nav .reward .rewardquery {
+    background-position: -8.21rem -83.21rem;
+}
+
+.sub-nav .reward .rewardquery.selected {
+    background-position: -8.21rem -89.64rem;
+}
+
+.sub-nav .trade .dollaraccount {
+    background-position: 1.78rem -42.14rem;
+}
+
+.sub-nav .trade .dollaraccount.selected {
+    background-position: 1.78rem -33.36rem;
+}
+
+.sub-nav .trade .xxcurrencyaccount {
+    background-position: -4.78rem -42.14rem;
+}
+
+.sub-nav .trade .xxcurrencyaccount.selected {
+    background-position: -4.78rem -33.36rem;
+}
+
+.sub-nav .trade .financialaccount {
+    background-position: -11.78rem -42.14rem;
+}
+
+.sub-nav .trade .financialaccount.selected {
+    background-position: -11.78rem -33.36rem;
+}
+
+.sub-nav .trade .xxstockcount {
+    background-position: -18.71rem -42.14rem;
+}
+
+.sub-nav .trade .xxstockcount.selected {
+    background-position: -18.71rem -33.36rem;
+}
+
+.sub-nav .trade .exchangeaccount {
+    background-position: -25.71rem -42.14rem;
+}
+
+.sub-nav .trade .exchangeaccount.selected {
+    background-position: -25.71rem -33.36rem;
+}
+
+.sub-nav .profit .profitinfo {
+    background-position: -8.28rem -57.5rem;
+}
+
+.sub-nav .profit .profitinfo.selected {
+    background-position: -8.28rem -50rem;
+}
+/*Animation*/
+
+.sub-nav li {
+    -webkit-animation: 0.5s linear 0s 1 none unfold_nav;
+    -moz-animation: 0.5s linear 0s 1 none unfold_nav;
+    -o-animation: 0.5s linear 0s 1 none unfold_nav;
+    animation: 0.5s linear 0s 1 none unfold_nav;
+}
+
+@-webkit-keyframes unfold_nav { from { left:160px; } to { left:0; }  }
+@-moz-keyframes unfold_nav { from { left:160px; } to { left:0; }  }
+@-o-keyframes unfold_nav { from { left:160px; } to { left:0; }  }
+@keyframes unfold_nav { from { left:160px; } to { left:0; }  }
+
+/*Portable Device*/
+
+@media screen and (orientation: portrait) and (min-resolution: 192dpi) {
+    /*Layout*/
+
+    .main-nav li {
+        padding: 1.07rem 0.3rem;
+    }
+
+    .sub-nav li {
+        background-size: 500%;
+    }
+
+    .sub-nav .user .edituser {
+        background-position: -5.5rem -14.3rem;
+    }
+
+    .sub-nav .user .edituser.selected {
+        background-position: -5.5rem -19.3rem;
+    }
+
+    .sub-nav .user .editpassword {
+        background-position: -12.7rem -14.3rem;
+    }
+
+    .sub-nav .user .editpassword.selected {
+        background-position: -12.7rem -19.3rem;
+    }
+
+    .sub-nav .buy .register {
+        background-position: 2rem -8.93rem; 
+    }
+
+    .sub-nav .buy .register.selected {
+        background-position: 2rem 1.4rem; 
+    }
+
+    .sub-nav .buy .buypin {
+        background-position: -3.34rem -6.5rem; 
+    }
+
+    .sub-nav .buy .buypin.selected {
+        background-position: -3.34rem 1.4rem; 
+    }
+
+    .sub-nav .buy .buyquery {
+        background-position: -8.97rem -6.5rem; 
+    }
+
+    .sub-nav .buy .buyquery.selected {
+        background-position: -8.97rem 1.4rem; 
+    }
+
+    .sub-nav .buy .rechargestock {
+        background-position: -14.2rem -6.5rem; 
+    }
+
+    .sub-nav .buy .rechargestock.selected {
+        background-position: -14.2rem 1.4rem; 
+    }
+
+    .sub-nav .buy .pinrecharge {
+        background-position: -19.7rem -6.5rem; 
+    }
+
+    .sub-nav .buy .pinrecharge.selected {
+        background-position: -19.7rem 1.4rem; 
+    }
+
+    .sub-nav .buy .exchangerate {
+        background-position: -25rem -6.5rem; 
+    }
+
+    .sub-nav .buy .exchangerate.selected {
+        background-position: -25rem 1.4rem; 
+    }
+
+    .sub-nav .extension .recommended {
+        background-position: -5.9rem -58.8rem;
+    }
+
+    .sub-nav .extension .recommended.selected {
+        background-position: -5.9rem -53rem;
+    }
+
+    .sub-nav .extension .development {
+        background-position: -11.6rem -58.8rem;    
+    }
+
+    .sub-nav .extension .development.selected {
+        background-position: -11.6rem -53rem;    
+    }
+
+    .sub-nav .reward .rewardquery {
+        background-position: -6rem -44.6rem;
+    }
+
+    .sub-nav .reward .rewardquery.selected {
+        background-position: -6rem -38.6rem;
+    }
+
+    .sub-nav .trade .dollaraccount {
+        background-position: 1.78rem -32.3rem;
+    }
+
+    .sub-nav .trade .dollaraccount.selected {
+        background-position: 1.78rem -25.5rem;
+    }
+
+    .sub-nav .trade .xxcurrencyaccount {
+        background-position: -3.3rem -32.3rem;
+    }
+
+    .sub-nav .trade .xxcurrencyaccount.selected {
+        background-position: -4.78rem -25.5rem;
+    }
+
+    .sub-nav .trade .financialaccount {
+        background-position: -8.8rem -32.3rem;
+    }
+
+    .sub-nav .trade .financialaccount.selected {
+        background-position: -8.8rem -25.5rem;
+    }
+
+    .sub-nav .trade .xxstockcount {
+        background-position: -14.1rem -32.3rem;
+    }
+
+    .sub-nav .trade .xxstockcount.selected {
+        background-position: -14.1rem -25.5rem;
+    }
+
+    .sub-nav .trade .exchangeaccount {
+        background-position: -19.7rem -32.3rem;
+    }
+
+    .sub-nav .trade .exchangeaccount.selected {
+        background-position: -19.7rem -25.5rem;
+    }
+
+    .sub-nav .profit .profitinfo {
+        background-position: -6rem -44.5rem;
+    }
+
+    .sub-nav .profit .profitinfo.selected {
+        background-position: -6rem -38.5rem;
+    }
+}
+
+
+
+
+/*FOOTER*/
+
+/*Layout*/
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+footer p {
+    padding: 25px 0 5px 0;
+    position: relative;
+}
+
+/*Style*/
+
+footer {
+    background-color: rgba(208, 187, 153, .75);
+}
+
+footer p {
+    color: #9e8561;
+}

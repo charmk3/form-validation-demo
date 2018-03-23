@@ -1,0 +1,428 @@
+/*Layout*/
+
+body {
+    min-width: 800px;
+}
+
+label.radio {
+    line-height: 100%;
+    width: auto;
+    margin: 0 0 0 10px;
+}
+
+label.required:before {
+    vertical-align: middle;
+    margin-right: 10px;
+    line-height: 1rem;
+}
+
+form {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form ul {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+form ul li {
+    margin-top: 20px;
+    position: relative;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+form input {
+    height: 30px;
+    width: 280px;
+    display: inline-block;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 5px;
+}
+
+form .error-tip {
+    position: absolute;
+    left: 185px;
+    top: 35px;
+}
+
+form .strength {
+    margin-left: 180px;
+}
+
+form .strength li {
+    width: 50px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+form .strength .bar {
+    height: 8px;
+    margin-bottom: 5px;
+}
+
+form .strength li {
+    width: 50px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+form .strength .bar {
+    height: 8px;
+    margin-bottom: 5px;
+}
+
+form .tips {
+    display: inline-block;
+    width: 250px;
+    height: 28px;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+
+form .tips span {
+    width: 400px;
+    position: absolute;
+    line-height: 28px;
+}
+
+form div#develop_point {
+    display: inline-block;
+    line-height: 100%;
+    margin: 0 0 0 10px;
+    position: relative;
+}
+
+form div#develop_point .error-tip {
+    position: absolute;
+    left: 76px;
+    top: 26px;
+}
+
+form #left,
+form #right {
+    height: 1.25rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+form #left {
+    margin-left: 20px;
+}
+
+form #right {
+    margin-left: 10px;
+}
+
+form .consumer label {
+    height: 199px;
+    vertical-align: top;
+}
+
+form .consumer-level {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+form .consumer-level input[type="radio"] {
+    display: none;
+}
+
+form .consumer-level ul li {
+    width: 110px;
+    position: relative;
+}
+
+form .consumer-level .graphic {
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+form .consumer-level .graphic:before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #644938;
+}
+
+form .consumer-level .graphic:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+form .consumer-level .level-1 .graphic {
+    height: 150px;
+    top: 150px;
+    line-height: 150px;
+}
+
+form .consumer-level .level-1 .graphic:before {
+    content: "DB900";
+}
+
+form .consumer-level .level-1 .graphic:after {
+    content: "bv: 900";
+}
+
+form .consumer-level .level-2 .graphic {
+    height: 200px;
+    top: 100px;
+    left: -3px;
+    line-height: 200px;
+}
+
+form .consumer-level .level-2 .graphic:before {
+    content: "DB3,000";
+}
+
+form .consumer-level .level-2 .graphic:after {
+    content: "bv: 3,000";
+}
+
+form .consumer-level .level-3 .graphic {
+    height: 250px;
+    top: 50px;
+    left: -6px;
+    line-height: 250px;
+}
+
+form .consumer-level .level-3 .graphic:before {
+    content: "DB9,000";
+}
+
+form .consumer-level .level-3 .graphic:after {
+    content: "bv: 9,000";
+}
+
+form .consumer-level .level-4 .graphic {
+    height: 300px;
+    top: 0;
+    left: -9px;
+    line-height: 300px;
+}
+
+form .consumer-level .level-4 .graphic:before {
+    content: "DB30,000";
+}
+
+form .consumer-level .level-4 .graphic:after {
+    content: "bv: 30,000";
+}
+
+.submit {
+    max-width: 1200px;
+    margin: 170px auto 0 auto;
+    padding-bottom: 100px;
+}
+
+/*Style*/
+
+li.register {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: 25px 15px; 
+}
+
+li.register.selected {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: 25px -80px; 
+}
+
+li.buy-pin {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -72px 15px; 
+}
+
+li.buy-pin.selected {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -72px -80px; 
+}
+
+li.query-subscription {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -169px 15px; 
+}
+
+li.query-subscription.selected {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -169px -80px; 
+}
+
+li.charge-stock {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -266px 15px; 
+}
+
+li.charge-stock.selected {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -266px -80px; 
+}
+
+li.charge-pin {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -363px 15px; 
+}
+
+li.charge-pin.selected {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -363px -80px; 
+}
+
+li.chargerate {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -457px 15px; 
+}
+
+li.chargerate.selected {
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+    background-position: -457px -80px; 
+}
+
+label.required:before {
+    content: "*";
+    color: red;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    border-top: 1px solid rgba(162, 142, 117, 0.5);
+    box-shadow: 0 0 1px 1px #a28e75;
+}
+
+form input:focus {
+    outline: unset;
+    box-shadow: 0 0 3px 1px #553a2d;
+}
+
+form .strength li {
+    color: #868686;
+    font-size: 12px;
+}
+
+form .strength .bar {
+    background-color: #868686;
+}
+
+form .strength .weak.active {
+    color: red;
+}
+
+form .strength .weak.active .bar {
+    background-color: red;
+}
+
+form .strength .normal.active {
+    color: orange;
+}
+
+form .strength .normal.active .bar {
+    background-color: orange;
+}
+
+form .strength .strong.active {
+    color: green;
+}
+
+form .strength .strong.active .bar {
+    background-color: green;
+}
+
+form .tips {
+    color: #868686;
+    font-size: 12px;
+}
+
+form #left,
+form #right {
+    border: none;
+    box-shadow: none;
+}
+
+form .consumer-level ul li .graphic {
+    color: #a66636;
+    font-size: 1.5rem;
+    background-color: #cdb687;
+    border: 2px solid #868686;
+    border-radius: 2px;
+}
+
+form .consumer-level ul li .graphic:hover {
+    cursor: pointer;
+}
+
+form .consumer-level ul li .graphic.highlight {
+    background-color: #e6dabb;
+    box-shadow: 3px 3px 3px #644938;
+    border: 1px solid black;
+    z-index: 99;
+}
+
+form .consumer-level ul li .graphic:before {
+    color: #644938;
+    font-size: 1.5rem;
+}
+
+form .consumer-level ul li .graphic:after {
+    color: #868686;
+    font-size: 1rem;
+}
+
+
+/*Portable Device*/
+
+@media screen and (min-resolution: 192dpi) and (orientation: portrait) and (max-width: 1000px) {
+    /*Layout*/
+
+    form ul {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    form > ul > li > label {
+        width: 25%;
+    }
+
+    form .consumer-level ul li .graphic {
+        font-size: 1rem;
+    }
+
+    form .consumer-level ul li .graphic:before {
+        font-size: 1rem;
+    }
+
+    form .consumer-level ul li .graphic:after {
+        font-size: 0.8rem;
+    }
+
+    /*Style*/
+
+    form label {
+        font-size: 1rem;
+    }
+}

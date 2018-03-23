@@ -1,0 +1,27 @@
+/*FOOTER*/
+
+/*Layout*/
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+footer p {
+    padding: 25px 0 5px 0;
+    position: relative;
+}
+
+/*Style*/
+
+footer {
+    background-color: rgba(208, 187, 153, .75);
+}
+
+footer p {
+    color: #9e8561;
+}
